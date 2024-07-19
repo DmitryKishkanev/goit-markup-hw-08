@@ -1,0 +1,52 @@
+.hero {
+  text-align: center;
+}
+
+.hero__overlay {
+  max-width: 1600px;
+  height: 600px;
+  padding: 200px 0;
+  margin: 0 auto;
+
+  background-color: $dark-bg-color;
+  background-image: linear-gradient(
+      to right,
+      $additional-background,
+      $additional-background
+    ),
+    url("../images/hero/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: $primary-background;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
+
+  background-color: $accent-color;
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.96px;
+
+  cursor: pointer;
+}

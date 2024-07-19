@@ -1,0 +1,3 @@
+@mixin transit($state) {
+  transition: $state $transition-time $transition-type;
+}
