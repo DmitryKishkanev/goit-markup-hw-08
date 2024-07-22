@@ -1,0 +1,26 @@
+/* Шапка */
+// .header__main-nav {
+//   display: flex;
+//   align-items: center;
+//   /* border-bottom: 1px solid tomato; */
+// }
+
+.logo {
+  color: $logo-black;
+  font-family: raleway;
+
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.logo__first-half {
+  color: $accent-color;
+}
