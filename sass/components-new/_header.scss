@@ -38,7 +38,7 @@
 }
 
 .site-nav {
-  margin-top: 48px;
+  display: none;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
@@ -52,9 +52,9 @@
 }
 
 .site-nav__item:not(:first-child) {
-  @media screen and (min-width: $mobile-width) {
-    margin-top: 32px;
-  }
+  // @media screen and (min-width: $mobile-width) {
+  //   margin-top: 32px;
+  // }
   @media screen and (min-width: $tablet-width) {
     margin-top: 0;
     margin-left: 50px;
@@ -109,7 +109,7 @@
 }
 
 .auth-nav {
-  margin-top: 306px;
+  display: none;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
@@ -128,8 +128,6 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 32px;
-
     @media screen and (min-width: $tablet-width) {
       margin-bottom: 10px;
     }
@@ -150,7 +148,7 @@
 
   color: $text-color;
 
-  font-size: 34px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -162,7 +160,7 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $desktop-width) {
     font-size: 14px;
   }
 }
