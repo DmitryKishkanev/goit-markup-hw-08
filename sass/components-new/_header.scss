@@ -1,8 +1,9 @@
 /* Шапка */
 .header__main-nav {
+  display: flex;
+  align-items: center;
+
   @media screen and (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
   }
 }
 
@@ -14,6 +15,8 @@
 }
 
 .logo {
+  display: block;
+
   color: $logo-black;
   font-family: raleway;
 
@@ -35,6 +38,10 @@
 
 .logo__first-half {
   color: $accent-color;
+}
+
+.logo__margin {
+  margin: 16px 0;
 }
 
 .site-nav {
