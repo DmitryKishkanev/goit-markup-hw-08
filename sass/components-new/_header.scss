@@ -115,7 +115,7 @@
   }
 }
 
-.auth-nav {
+.contact-nav {
   display: none;
 
   @media screen and (min-width: $tablet-width) {
@@ -130,7 +130,7 @@
   }
 }
 
-.auth-nav__item {
+.contact-nav__item {
   display: flex;
   align-items: center;
 
@@ -146,7 +146,7 @@
   }
 }
 
-.auth-nav__link {
+.contact-nav__link {
   display: flex;
   align-items: center;
 
@@ -172,7 +172,7 @@
   }
 }
 
-.auth-nav__icon {
+.contact-nav__icon {
   margin-right: 10px;
 
   fill: currentColor;
