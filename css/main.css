@@ -111,7 +111,7 @@ ul {
   }
 }
 
-.logo__first-half {
+.logo__color-change {
   color: #2196f3;
 }
 
@@ -139,7 +139,6 @@ ul {
 
 @media screen and (min-width: 768px) {
   .site-nav__item:not(:first-child) {
-    margin-top: 0;
     margin-left: 50px;
   }
 }
@@ -213,14 +212,13 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .contact-nav__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact-nav__item:not(:last-child) {
-    margin-bottom: 0px;
     margin-right: 30px;
   }
 }

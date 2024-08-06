@@ -25,8 +25,10 @@
   letter-spacing: 0.02em;
 }
 
-.nav-modal__item:not(:last-child) {
-  margin-bottom: 32px;
+.nav-modal__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .nav-modal__link {
@@ -52,10 +54,12 @@
   letter-spacing: 0.02em;
 }
 
-.contact-modal__item:not(:last-child) {
-  margin-bottom: 32px;
+.contact-modal__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
 
-  font-size: 34px;
+    font-size: 34px;
+  }
 }
 
 .contact-modal__link {
@@ -75,10 +79,12 @@
   letter-spacing: 0.02em;
 }
 
-.networks-modal__item:not(:last-child) {
-  margin-right: 10px;
-  padding-right: 10px;
-  border-right: 1px solid $input-border-color;
+.networks-modal__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid $input-border-color;
+  }
 }
 
 .networks-modal__link {
