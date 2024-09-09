@@ -269,11 +269,12 @@ ul {
   padding: 48px 40px;
   z-index: 1;
   cursor: pointer;
+  display: none;
   background-color: #ffffff;
 }
 
 .nav-modal {
-  margin-bottom: 206px;
+  margin-bottom: 306px;
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.02em;
