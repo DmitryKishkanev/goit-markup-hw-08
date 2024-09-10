@@ -77,49 +77,72 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="container-modal">
-        <ul class="nav-modal">
-          <li class="nav-modal__item">
-            <a
-              href="./index.html"
-              class="nav-modal__link nav-modal__link--current"
-              >Студия</a
-            >
-          </li>
-          <li class="nav-modal__item">
-            <a href="./portfolio.html" class="nav-modal__link">Портфолио</a>
-          </li>
-          <li class="nav-modal__item">
-            <a href="" class="nav-modal__link">Контакты</a>
-          </li>
-        </ul>
 
-        <ul class="contact-modal">
-          <li class="contact-modal__item">
-            <a class="contact-modal__link contact-modal__link--change" href=""
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li class="contact-modal__item">
-            <a class="contact-modal__link" href="">info@devstudio.com</a>
-          </li>
-        </ul>
+        <div class="container-modal" data-menu>
+          <ul class="nav-modal">
+            <li class="nav-modal__item">
+              <a
+                href="./index.html"
+                class="nav-modal__link nav-modal__link--current"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-modal__item">
+              <a href="./portfolio.html" class="nav-modal__link">Портфолио</a>
+            </li>
+            <li class="nav-modal__item">
+              <a href="" class="nav-modal__link">Контакты</a>
+            </li>
+          </ul>
 
-        <ul class="networks-modal">
-          <li class="networks-modal__item">
-            <a class="networks-modal__link" href="">Instagram</a>
-          </li>
-          <li class="networks-modal__item">
-            <a class="networks-modal__link" href="">Twitter</a>
-          </li>
-          <li class="networks-modal__item">
-            <a class="networks-modal__link" href="">Facebook</a>
-          </li>
-          <li class="networks-modal__item">
-            <a class="networks-modal__link" href="">LinkedIn</a>
-          </li>
-        </ul>
+          <ul class="contact-modal">
+            <li class="contact-modal__item">
+              <a class="contact-modal__link contact-modal__link--change" href=""
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="contact-modal__item">
+              <a class="contact-modal__link" href="">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="networks-modal">
+            <li class="networks-modal__item">
+              <a class="networks-modal__link" href="">Instagram</a>
+            </li>
+            <li class="networks-modal__item">
+              <a class="networks-modal__link" href="">Twitter</a>
+            </li>
+            <li class="networks-modal__item">
+              <a class="networks-modal__link" href="">Facebook</a>
+            </li>
+            <li class="networks-modal__item">
+              <a class="networks-modal__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu-button__menu"
+              href="./images/sprite/sprite.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="menu-button__close"
+              href="./images/sprite/sprite.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -617,6 +640,7 @@
     </div>
 
     <!-- Скрипт модельного окна -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,7 +1,7 @@
 .container-modal {
-  position: fixed;
+  display: none;
 
-  display: flex;
+  position: fixed;
   flex-direction: column;
   margin: auto;
   top: 0;
@@ -12,9 +12,23 @@
   z-index: 1;
   cursor: pointer;
 
-  // display: none;
-
   background-color: $primary-background;
+
+  &.is-open {
+    display: flex;
+  }
+
+  // position: absolute;
+  // top: 100%;
+  // left: 0;
+  // width: 100%;
+
+  // background-color: palegoldenrod;
+  // padding: 20px;
+  // text-align: center;
+  // font-size: 20px;
+
+  // z-index: 1;
 }
 
 .nav-modal {

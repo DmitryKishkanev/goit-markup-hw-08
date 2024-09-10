@@ -80,17 +80,14 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .header__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
 .logo {
   display: block;
   color: #000000;
@@ -252,11 +249,35 @@ ul {
   fill: currentColor;
 }
 
-.container-modal {
-  position: fixed;
+.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+  cursor: pointer;
+}
+.menu-button .menu-button__close {
+  display: none;
+}
+.menu-button.is-open .menu-button__close {
+  display: block;
+}
+.menu-button.is-open .menu-button__menu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.container-modal {
+  display: none;
+  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -269,8 +290,12 @@ ul {
   padding: 48px 40px;
   z-index: 1;
   cursor: pointer;
-  display: none;
   background-color: #ffffff;
+}
+.container-modal.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .nav-modal {
