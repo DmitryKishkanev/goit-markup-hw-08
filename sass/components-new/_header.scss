@@ -177,29 +177,3 @@
 
   fill: currentColor;
 }
-
-.menu-button {
-  display: flex;
-  padding: 0;
-  margin-left: auto;
-  border: none;
-  background-color: transparent;
-  z-index: 2;
-  cursor: pointer;
-
-  & .menu-button__close {
-    display: none;
-  }
-
-  &.is-open .menu-button__close {
-    display: block;
-  }
-
-  &.is-open .menu-button__menu {
-    display: none;
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    display: none;
-  }
-}

@@ -78,7 +78,30 @@
           </li>
         </ul>
 
-        <div class="container-modal" data-menu>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="container-modal"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu-button__menu"
+              href="./images/sprite/sprite.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="menu-button__close"
+              href="./images/sprite/sprite.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="container-modal" id="container-modal" data-menu>
           <ul class="nav-modal">
             <li class="nav-modal__item">
               <a
@@ -121,28 +144,6 @@
             </li>
           </ul>
         </div>
-
-        <button
-          type="button"
-          class="menu-button"
-          aria-expanded="false"
-          data-menu-button
-        >
-          <svg
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="menu-button__menu"
-              href="./images/sprite/sprite.svg#icon-menu_40px"
-            ></use>
-            <use
-              class="menu-button__close"
-              href="./images/sprite/sprite.svg#icon-close_40px"
-            ></use>
-          </svg>
-        </button>
       </div>
     </header>
 

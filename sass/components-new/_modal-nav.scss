@@ -1,3 +1,38 @@
+.menu-button {
+  display: flex;
+  padding: 0;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+  cursor: pointer;
+
+  & svg {
+    fill: currentColor;
+  }
+
+  & .menu-button__close {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.is-open .menu-button__close {
+    display: block;
+  }
+
+  &.is-open .menu-button__menu {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .container-modal {
   display: none;
 
@@ -17,18 +52,6 @@
   &.is-open {
     display: flex;
   }
-
-  // position: absolute;
-  // top: 100%;
-  // left: 0;
-  // width: 100%;
-
-  // background-color: palegoldenrod;
-  // padding: 20px;
-  // text-align: center;
-  // font-size: 20px;
-
-  // z-index: 1;
 }
 
 .nav-modal {

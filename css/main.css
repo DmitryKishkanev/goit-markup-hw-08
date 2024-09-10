@@ -260,8 +260,14 @@ ul {
   z-index: 2;
   cursor: pointer;
 }
+.menu-button svg {
+  fill: currentColor;
+}
 .menu-button .menu-button__close {
   display: none;
+}
+.menu-button:hover, .menu-button:focus {
+  color: #2196f3;
 }
 .menu-button.is-open .menu-button__close {
   display: block;
