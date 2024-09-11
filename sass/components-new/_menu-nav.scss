@@ -33,7 +33,7 @@
   }
 }
 
-.container-modal {
+.menu-container {
   display: none;
 
   position: fixed;
@@ -44,8 +44,8 @@
   width: 100%;
   height: 100%;
   padding: 48px 40px;
-  z-index: 1;
   cursor: pointer;
+  z-index: 1;
 
   background-color: $primary-background;
 
@@ -54,7 +54,7 @@
   }
 }
 
-.nav-modal {
+.menu-nav {
   margin-bottom: 306px;
 
   font-weight: 500;
@@ -62,13 +62,13 @@
   letter-spacing: 0.02em;
 }
 
-.nav-modal__item {
+.menu-nav__item {
   &:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-.nav-modal__link {
+.menu-nav__link {
   color: $primary-text-color;
 
   @include transit(color);
@@ -83,7 +83,7 @@
   }
 }
 
-.contact-modal {
+.menu-contact {
   margin-bottom: 64px;
 
   font-weight: 500;
@@ -91,7 +91,7 @@
   letter-spacing: 0.02em;
 }
 
-.contact-modal__item {
+.menu-contact__item {
   &:not(:last-child) {
     margin-bottom: 32px;
 
@@ -99,7 +99,7 @@
   }
 }
 
-.contact-modal__link {
+.menu-contact__link {
   color: $text-color;
 
   &--change {
@@ -107,7 +107,7 @@
   }
 }
 
-.networks-modal {
+.menu-networks {
   display: flex;
 
   font-weight: 500;
@@ -116,7 +116,7 @@
   letter-spacing: 0.02em;
 }
 
-.networks-modal__item {
+.menu-networks__item {
   &:not(:last-child) {
     margin-right: 10px;
     padding-right: 10px;
@@ -124,6 +124,6 @@
   }
 }
 
-.networks-modal__link {
+.menu-networks__link {
   color: $accent-color;
 }
