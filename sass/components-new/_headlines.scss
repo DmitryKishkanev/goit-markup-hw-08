@@ -1,10 +1,14 @@
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
   letter-spacing: 1.08px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
