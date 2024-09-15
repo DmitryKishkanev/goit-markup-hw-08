@@ -41,8 +41,8 @@ ul {
 
 .container {
   // width: 1230px;
-  min-width: 250px;
-  max-width: 1200px;
+  min-width: 300px;
+  // max-width: 1200px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -51,15 +51,15 @@ ul {
   margin-left: auto;
   margin-right: auto;
 
-  // @media screen and (min-width: $mobile-width) {
-  //   width: 480px;
-  // }
+  @media screen and (min-width: $mobile-width) {
+    width: 480px;
+  }
 
-  // @media screen and (min-width: $tablet-width) {
-  //   width: 768px;
-  // }
+  @media screen and (min-width: $tablet-width) {
+    width: 768px;
+  }
 
-  // @media screen and (min-width: $desktop-width) {
-  //   width: 1200px;
-  // }
+  @media screen and (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
