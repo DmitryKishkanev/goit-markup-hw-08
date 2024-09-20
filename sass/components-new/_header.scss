@@ -45,6 +45,14 @@
 
 .logo__margin {
   margin: 16px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 26px 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 24px 0;
+  }
 }
 
 .site-nav {
