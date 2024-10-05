@@ -20,8 +20,8 @@
   position: absolute;
   @extend %window-centered;
 
-  width: 270px;
-  height: 609px;
+  min-width: 270px;
+  max-height: 669px;
 
   //   margin-right: 0;
 
@@ -80,14 +80,16 @@
 .service-form {
   display: flex;
   flex-direction: column;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: 100%;
+  // width: 528px;
+  // height: 581px;
   padding: 40px;
 
-  @media screen and (max-width: 1199px) {
-    width: 450px;
-    height: 609px;
-  }
+  // @media screen and (max-width: 1199px) {
+  //   width: 450px;
+  //   height: 609px;
+  // }
 }
 
 .service-form__title {
@@ -198,20 +200,28 @@
 }
 
 .service-form__field-checkbox {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
-  text-align: center;
+  // text-align: center;
   letter-spacing: 0.03em;
   color: $text-color;
 
   @media screen and (min-width: $desktop-width) {
-    font-size: 12px;
+    font-size: 14px;
   }
+}
+
+.service-form__checkbox-view {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .service-form__agreement {
@@ -232,13 +242,18 @@
 }
 
 .service-form__chackbox-icon {
-  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  // display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  // margin-right: 8px;
 
   border: 2px solid $chackbox-color;
   border-radius: 2px;
+  cursor: pointer;
 
   .service-form__agreement:checked + & {
     border-color: $accent-color;
@@ -247,11 +262,17 @@
     background-size: contain;
     background-origin: border-box;
   }
+
+  .service-form__checkbox-view:hover &,
+  .service-form__checkbox-view:focus & {
+    border-color: $accent-color;
+  }
 }
 
 .service-form__agreement-link {
-  margin-left: 4px;
+  margin-left: 3px;
   color: $accent-color;
+  text-decoration: underline;
 }
 
 .service-form__send-btn {

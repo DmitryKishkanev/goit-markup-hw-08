@@ -1,0 +1,44 @@
+.networks-block__list {
+  display: flex;
+  justify-content: center;
+}
+
+.networks-block__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.networks-block__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $background-icon;
+  color: $icon-network;
+
+  @include transit(color);
+  @include transit(background);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-background;
+  }
+}
+
+.recolor__link {
+  color: $primary-background;
+}
+
+.networks-block__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
