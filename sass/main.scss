@@ -1,20 +1,36 @@
+// utils
 @import "./utils/variables";
 @import "./utils/hide";
 @import "./utils/mixins";
 @import "./utils/placeholders";
+
+// base
 @import "./base/defaults";
-@import "./components-new/header";
-@import "./components-new/menu-nav";
-@import "./components-new/hero";
-@import "./components-new/headlines";
-@import "./components-new/advantages";
-@import "./components-new/work";
+@import "./base/headlines";
+
+// reused
 @import "./components-new/reused/card";
 @import "./components-new/reused/networks";
-@import "./components-new/comand";
-@import "./components-new/clients";
-@import "./components-new/footer";
-@import "./components-new/backdrop";
+@import "./components-new/reused/logo";
+
+// by-click
+@import "./components-new/by-click/menu-nav";
+@import "./components-new/by-click/backdrop";
+
+// general
+@import "./components-new/general/header";
+@import "./components-new/general/footer";
+
+// studio
+@import "./components-new/studio/hero";
+@import "./components-new/studio/advantages";
+@import "./components-new/studio/work";
+@import "./components-new/studio/comand";
+@import "./components-new/studio/clients";
+
+// portfolio
+@import "./components-new/portfolio/section-portfolio";
+@import "./components-new/portfolio/portfolio-nav";
 // @import "./components-old/header";
 // @import "./components-old/hero";
 // @import "./components-old/headlines";

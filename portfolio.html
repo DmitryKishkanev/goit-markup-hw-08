@@ -22,8 +22,8 @@
     <header class="header">
       <div class="container header__main-nav">
         <nav class="header__nav">
-          <a class="logo" href="./index.html" aria-label="Логотип">
-            <span class="logo__first-half">Web</span>Studio
+          <a class="logo logo__margin" href="./index.html" aria-label="Логотип">
+            <span class="logo__color-change">Web</span>Studio
           </a>
 
           <ul class="site-nav">
@@ -48,37 +48,104 @@
           </ul>
         </nav>
 
-        <ul class="auth-nav">
-          <li class="auth-nav__item">
+        <ul class="contact-nav">
+          <li class="contact-nav__item">
             <a
-              class="auth-nav__link"
+              class="contact-nav__link"
               href="mailto:info@devstudio.com"
               aria-label="Имейл"
             >
-              <svg class="auth-nav__icon" width="16" height="12">
+              <svg class="contact-nav__icon" width="16" height="12">
                 <use href="./images/sprite/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="auth-nav__item">
+          <li class="contact-nav__item">
             <a
-              class="auth-nav__link"
+              class="contact-nav__link"
               href="tel:(+38)096-111-11-11"
               aria-label="Телефон"
             >
-              <svg class="auth-nav__icon" width="10" height="16">
+              <svg class="contact-nav__icon" width="10" height="16">
                 <use href="./images/sprite/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="menu-button__menu"
+              href="./images/sprite/sprite.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="menu-button__close"
+              href="./images/sprite/sprite.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="menu-nav">
+            <li class="menu-nav__item">
+              <a
+                href="./index.html"
+                class="menu-nav__link menu-nav__link--current"
+                >Студия</a
+              >
+            </li>
+            <li class="menu-nav__item">
+              <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="/" class="menu-nav__link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="menu-contact">
+            <li class="menu-contact__item">
+              <a class="menu-contact__link menu-contact__link--change" href=""
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-contact__item">
+              <a class="menu-contact__link" href="">info@devstudio.com</a>
+            </li>
+          </ul>
+
+          <ul class="menu-networks">
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="">Instagram</a>
+            </li>
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="">Twitter</a>
+            </li>
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="">Facebook</a>
+            </li>
+            <li class="menu-networks__item">
+              <a class="menu-networks__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
-    <!-- Проекты -->
     <main>
+      <!-- Проекты -->
       <section class="portfolio">
         <div class="container">
           <ul class="filter-buttons">
@@ -387,11 +454,11 @@
         <div class="footer__container">
           <div class="address-block">
             <a
-              class="logo footer__logo"
+              class="logo recolor__logo"
               href="/index.html"
               aria-label="Логотип"
             >
-              <span class="logo__first-half">Web</span>Studio
+              <span class="logo__color-change">Web</span>Studio
             </a>
             <address class="address">
               <ul class="address__list">
@@ -416,32 +483,53 @@
           </div>
           <div class="networks-block">
             <b class="networks-block__title">Присоединяйтесь</b>
-            <a class="networks-block__link" href="" aria-label="Инстаграм">
-              <svg class="networks-block__icon">
-                <use
-                  href="./images/sprite/sprite.svg#icon-footer-instagram"
-                ></use>
-              </svg>
-            </a>
-            <a class="networks-block__link" href="" aria-label="Твиттер">
-              <svg class="networks-block__icon">
-                <use href="./images/sprite/sprite.svg#icon-footer-Vector"></use>
-              </svg>
-            </a>
-            <a class="networks-block__link" href="" aria-label="Фейсбук">
-              <svg class="networks-block__icon">
-                <use
-                  href="./images/sprite/sprite.svg#icon-footer-facebook"
-                ></use>
-              </svg>
-            </a>
-            <a class="networks-block__link" href="" aria-label="Линкедин">
-              <svg class="networks-block__icon">
-                <use
-                  href="./images/sprite/sprite.svg#icon-footer-linkedin"
-                ></use>
-              </svg>
-            </a>
+
+            <ul class="networks-block__list">
+              <li class="networks-block__item">
+                <a
+                  class="networks-block__link recolor__link"
+                  href=""
+                  aria-label="Инстаграм"
+                >
+                  <svg class="networks-block__icon">
+                    <use href="./images/sprite/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks-block__item">
+                <a
+                  class="networks-block__link recolor__link"
+                  href=""
+                  aria-label="Твиттер"
+                >
+                  <svg class="networks-block__icon">
+                    <use href="./images/sprite/sprite.svg#icon-Group"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks-block__item">
+                <a
+                  class="networks-block__link recolor__link"
+                  href=""
+                  aria-label="Фейсбук"
+                >
+                  <svg class="networks-block__icon">
+                    <use href="./images/sprite/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="networks-block__item">
+                <a
+                  class="networks-block__link recolor__link"
+                  href=""
+                  aria-label="Линкедин"
+                >
+                  <svg class="networks-block__icon">
+                    <use href="./images/sprite/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="newsletter-block">
             <b class="newsletter-block__title">Подпишитесь на рассылку</b>
@@ -467,5 +555,93 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модельное окно  -->
+    <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__button" data-modal-close>
+          <svg class="modal__icon-close" width="11" height="11">
+            <use href="./images/sprite/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="service-form">
+          <b class="service-form__title"
+            >Оставте свои данные, мы вам перезвоним</b
+          >
+
+          <label class="service-form__field-title"
+            >Имя
+            <input class="service-form__field" type="text" name="user-name" />
+            <svg class="service-form__input-icon">
+              <use
+                href="./images/sprite/sprite.svg#icon-person-black-18dp"
+              ></use>
+            </svg>
+          </label>
+
+          <label class="service-form__field-title"
+            >Телефон
+            <input
+              class="service-form__field"
+              type="tel"
+              name="user-telephone"
+            />
+            <svg class="service-form__input-icon">
+              <use
+                href="./images/sprite/sprite.svg#icon-phone-black-18dp"
+              ></use>
+            </svg>
+          </label>
+
+          <label class="service-form__field-title"
+            >Почта
+            <input class="service-form__field" type="email" name="user-mail" />
+            <svg class="service-form__input-icon">
+              <use
+                href="./images/sprite/sprite.svg#icon-email-black-18dp"
+              ></use>
+            </svg>
+          </label>
+
+          <label class="service-form__field-title">
+            Комментарий
+            <textarea
+              class="service-form__field-comment"
+              name="comment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+
+          <label class="service-form__field-checkbox">
+            <div class="service-form__checkbox-view">
+              <input
+                class="service-form__agreement"
+                type="checkbox"
+                name="agreement"
+                value="agreement"
+              />
+              <span class="service-form__chackbox-icon"></span>
+              Соглашаюсь с рассылкой и прнинимаю
+              <a class="service-form__agreement-link" href=""
+                >Условия договора</a
+              >
+            </div>
+          </label>
+
+          <button
+            type="submit"
+            class="service-form__send-btn"
+            aria-label="Отправить"
+          >
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Скрипт модельного окна -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

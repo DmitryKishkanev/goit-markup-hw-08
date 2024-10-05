@@ -1,0 +1,41 @@
+.logo {
+  display: block;
+
+  color: $logo-black;
+  font-family: raleway;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  @include transit(color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: 26px;
+  }
+}
+
+.logo__color-change {
+  color: $accent-color;
+}
+
+.logo__margin {
+  margin: 16px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 26px 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 24px 0;
+  }
+}
+
+.recolor__logo {
+  color: $primary-background;
+}
