@@ -1,0 +1,56 @@
+.portfolio-list {
+  display: inline-block;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: calc(-1 * $card-set-gap);
+    margin-left: calc(-1 * $card-set-gap);
+  }
+}
+
+.portfolio-list__item {
+  border: solid 1px tomato;
+
+  border-radius: 0px, 0px, 4px, 4px;
+  overflow: hidden;
+
+  @media screen and (min-width: $tablet-width) {
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+    width: calc((100% - 60px) / 3);
+    flex-basis: calc(100% / 3 - $card-set-gap);
+    margin-top: $card-set-gap;
+    margin-left: $card-set-gap;
+    border-radius: 0px, 0px, 4px, 4px;
+    overflow: hidden;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  /* Альтернатива */
+  /* .portfolio-list__item :not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.portfolio-list__item :not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+}
