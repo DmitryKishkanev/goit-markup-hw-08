@@ -39,11 +39,6 @@
 }
 
 .product__description {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-100%); */
-
   padding: 63px 24px;
   color: $card-tx-color;
 
@@ -56,7 +51,8 @@
 }
 
 .product__meta {
-  padding: 20px 24px;
+  max-width: 100%;
+  padding: 20px 0 20px 24px;
   border-right: 1px solid $card-border-color;
   border-bottom: 1px solid $card-border-color;
   border-left: 1px solid $card-border-color;

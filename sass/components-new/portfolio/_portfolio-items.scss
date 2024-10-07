@@ -1,34 +1,30 @@
 .portfolio-list {
-  display: inline-block;
+  display: block;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: $desktop-width) {
     margin-top: calc(-1 * $card-set-gap);
     margin-left: calc(-1 * $card-set-gap);
   }
 }
 
 .portfolio-list__item {
-  border: solid 1px tomato;
-
+  margin-top: $card-set-gap;
   border-radius: 0px, 0px, 4px, 4px;
   overflow: hidden;
 
   @media screen and (min-width: $tablet-width) {
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+    width: calc((100% - 30px) / 2);
+    flex-basis: calc(100% / 2 - $card-set-gap);
+    margin-left: $card-set-gap;
   }
 
   @media screen and (min-width: $desktop-width) {
     /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
     width: calc((100% - 60px) / 3);
     flex-basis: calc(100% / 3 - $card-set-gap);
-    margin-top: $card-set-gap;
-    margin-left: $card-set-gap;
-    border-radius: 0px, 0px, 4px, 4px;
-    overflow: hidden;
 
     &:nth-child(3n) {
       margin-right: 0;

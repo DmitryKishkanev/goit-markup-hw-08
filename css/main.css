@@ -67,7 +67,6 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: green;
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -1649,7 +1648,7 @@ ul {
 }
 
 .portfolio-list {
-  display: inline-block;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .portfolio-list {
@@ -1658,17 +1657,13 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio-list {
     margin-top: -30px;
     margin-left: -30px;
   }
 }
 
 .portfolio-list__item {
-  border: solid 1px tomato;
+  margin-top: 30px;
   border-radius: 0px, 0px, 4px, 4px;
   overflow: hidden;
   /* Альтернатива */
@@ -1680,16 +1675,21 @@ ul {
     margin-bottom: 30px;
   } */
 }
+@media screen and (min-width: 768px) {
+  .portfolio-list__item {
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+    width: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .portfolio-list__item {
     /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
     width: calc((100% - 60px) / 3);
     -ms-flex-preferred-size: calc(33.3333333333% - 30px);
         flex-basis: calc(33.3333333333% - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
-    border-radius: 0px, 0px, 4px, 4px;
-    overflow: hidden;
   }
   .portfolio-list__item:nth-child(3n) {
     margin-right: 0;
@@ -1744,10 +1744,6 @@ ul {
 }
 
 .product__description {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-100%); */
   padding: 63px 24px;
   color: rgb(255, 255, 255);
   font-family: Roboto;
@@ -1759,7 +1755,8 @@ ul {
 }
 
 .product__meta {
-  padding: 20px 24px;
+  max-width: 100%;
+  padding: 20px 0 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
