@@ -206,9 +206,14 @@
                   <div class="product__thumb">
                     <img
                       class="product__image"
-                      src="./images/portfolio/img1.jpg"
+                      srcset="
+                        ./img/Portfolio/MOB/Portfolio1 MOB x1.jpg 450w,
+                        ./img/Portfolio/TAB/Portfolio1 TAB x1.jpg 354w,
+                        ./img/Portfolio/DESK/Portfolio1 DESK x1.jpg 370w
+                      "
+                      src="./img/Portfolio/MOB/Portfolio1 MOB x1.jpg"
                       alt="фотографии людей на экране ноутбука"
-                      width="370"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 300px) 100vw, 100vw"
                     />
                     <div class="product__overlay">
                       <p class="product__description">
