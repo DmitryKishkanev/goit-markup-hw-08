@@ -120,6 +120,9 @@ ul {
 .card__img {
   position: relative;
   height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1375,59 +1378,48 @@ ul {
 }
 
 .team__card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .team__card-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .team__item {
+  margin-top: 30px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 480px) {
-  .team__item {
-    width: 450px;
-    height: 622px;
-  }
-}
 @media screen and (min-width: 768px) {
   .team__item {
-    margin: 0 30px 30px 0;
-    width: 354px;
-    height: 536px;
-  }
-  .team__item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .team__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+    width: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc(50% - 30px);
+        flex-basis: calc(50% - 30px);
+    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__item {
-    width: 270px;
-    height: 428px;
-    margin-bottom: 0;
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+    width: calc((100% - 90px) / 4);
+    -ms-flex-preferred-size: calc(25% - 30px);
+        flex-basis: calc(25% - 30px);
   }
   .team__item:nth-child(4n) {
     margin-right: 0;
   }
   .team__item:nth-last-child(-n+4) {
     margin-bottom: 0;
-  }
-  .team__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
