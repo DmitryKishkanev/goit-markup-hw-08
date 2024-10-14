@@ -41,6 +41,7 @@ ul {
 
 .container {
   min-width: 300px;
+  max-width: 1200px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -53,11 +54,11 @@ ul {
   //   width: 480px;
   // }
 
-  @media screen and (min-width: $tablet-width) {
-    width: 768px;
-  }
+  // @media screen and (min-width: $tablet-width) {
+  //   width: 768px;
+  // }
 
-  @media screen and (min-width: $desktop-width) {
-    width: 1200px;
-  }
+  // @media screen and (min-width: $desktop-width) {
+  //   width: 1200px;
+  // }
 }
