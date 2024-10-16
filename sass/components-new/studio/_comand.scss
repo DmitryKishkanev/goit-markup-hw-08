@@ -12,64 +12,6 @@
   }
 }
 
-// .team__card-set {
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   text-align: center;
-// }
-
-// .team__item {
-//   // width: 100%;
-
-//   background-color: $primary-background;
-//   border-radius: 0px 0px 4px 4px;
-
-//   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-//     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-//   &:not(:last-child) {
-//     margin-bottom: 30px;
-//   }
-
-//   @media screen and (min-width: $mobile-width) {
-//     width: 450px;
-//     height: 622px;
-//   }
-
-//   @media screen and (min-width: $tablet-width) {
-//     margin: 0 30px 30px 0;
-//     width: 354px;
-//     height: 536px;
-
-//     &:nth-child(2n) {
-//       margin-right: 0;
-//     }
-
-//     &:nth-last-child(-n + 2) {
-//       margin-bottom: 0;
-//     }
-//   }
-
-//   @media screen and (min-width: $desktop-width) {
-//     width: 270px;
-//     height: 428px;
-//     margin-bottom: 0;
-
-//     &:nth-child(4n) {
-//       margin-right: 0;
-//     }
-
-//     &:nth-last-child(-n + 4) {
-//       margin-bottom: 0;
-//     }
-
-//     &:not(:last-child) {
-//       margin-right: 30px;
-//     }
-//   }
-// }
-
 .team__card-set {
   display: block;
 
@@ -82,10 +24,10 @@
 }
 
 .team__item {
+  padding-bottom: 24px;
   margin-top: $card-set-gap;
   background-color: $primary-background;
   border-radius: 0px 0px 4px 4px;
-  // overflow: hidden;
 
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -101,5 +43,6 @@
     /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
     width: calc((100% - 90px) / 4);
     flex-basis: calc(100% / 4 - $card-set-gap);
+    padding-bottom: 30px;
   }
 }

@@ -15,16 +15,20 @@
 }
 
 .product__image {
-  display: block;
-  width: 100%;
+  min-height: 223px;
 }
 
 .product__overlay {
   position: absolute;
   top: 0;
   left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
+
   overflow: hidden;
   transform: translateY(-100%);
 
@@ -39,7 +43,7 @@
 }
 
 .product__description {
-  padding: 63px 24px;
+  padding: 77px 24px;
   color: $card-tx-color;
 
   font-family: Roboto;
@@ -48,6 +52,14 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 481px) {
+    padding: 49px 24px 77px;
+  }
+
+  @media screen and (min-width: 769px) {
+    padding: 63px 24px;
+  }
 }
 
 .product__meta {
@@ -56,6 +68,14 @@
   border-right: 1px solid $card-border-color;
   border-bottom: 1px solid $card-border-color;
   border-left: 1px solid $card-border-color;
+
+  @media screen and (min-width: 481px) {
+    padding: 20px 0 56px 24px;
+  }
+
+  @media screen and (min-width: 769px) {
+    padding: 20px 0 20px 24px;
+  }
 }
 
 .product__title {
