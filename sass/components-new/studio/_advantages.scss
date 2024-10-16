@@ -7,48 +7,76 @@
 }
 
 .advantages__card-set {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * $card-set-gap);
+    margin-left: calc(-1 * $card-set-gap);
+  }
 }
 
 .advantages__item {
-  width: 450px;
-
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
+  margin-top: $card-set-gap;
 
   @media screen and (min-width: $tablet-width) {
-    width: 354px;
-    margin: 0 30px 30px 0;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+    width: calc((100% - 30px) / 2);
+    flex-basis: calc(100% / 2 - $card-set-gap);
+    margin-left: $card-set-gap;
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 270px;
-    margin-bottom: 0;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 4) {
-      margin-bottom: 0;
-    }
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
+    width: calc((100% - 90px) / 4);
+    flex-basis: calc(100% / 4 - $card-set-gap);
   }
 }
+
+// .advantages__card-set {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
+
+// .advantages__item {
+//   width: 450px;
+
+//   &:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+
+//   @media screen and (min-width: $tablet-width) {
+//     width: 354px;
+//     margin: 0 30px 30px 0;
+
+//     &:nth-child(2n) {
+//       margin-right: 0;
+//     }
+
+//     &:nth-last-child(-n + 2) {
+//       margin-bottom: 0;
+//     }
+//   }
+
+//   @media screen and (min-width: $desktop-width) {
+//     width: 270px;
+//     margin-bottom: 0;
+
+//     &:nth-child(4n) {
+//       margin-right: 0;
+//     }
+
+//     &:nth-last-child(-n + 4) {
+//       margin-bottom: 0;
+//     }
+
+//     &:not(:last-child) {
+//       margin-right: 30px;
+//     }
+//   }
+// }
 
 .advantages__icon-thumb {
   display: flex;

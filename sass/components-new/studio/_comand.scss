@@ -101,13 +101,5 @@
     /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке) */
     width: calc((100% - 90px) / 4);
     flex-basis: calc(100% / 4 - $card-set-gap);
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-
-    &:nth-last-child(-n + 4) {
-      margin-bottom: 0;
-    }
   }
 }

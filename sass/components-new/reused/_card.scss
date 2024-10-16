@@ -1,37 +1,42 @@
 // Карточка
-.card__scene {
-  width: 270px;
-  height: 260px;
+.card {
+  width: 100%;
+}
 
-  margin: 0 auto;
+.card__scene {
+  display: flex;
+  // width: 100%;
+  // height: 260px;
+  // margin: 0 auto;
 
   background-color: $primary-background;
   outline: 1px solid $secondary-background;
 
   perspective: 800px;
 
-  @media screen and (min-width: $mobile-width) {
-    width: 450px;
-    height: 460px;
-  }
+  // @media screen and (min-width: $mobile-width) {
+  //   width: 450px;
+  //   height: 460px;
+  // }
 
-  @media screen and (min-width: $tablet-width) {
-    width: 354px;
-    height: 374px;
-    perspective: 700px;
-  }
+  // @media screen and (min-width: $tablet-width) {
+  //   width: 354px;
+  //   height: 374px;
+  //   perspective: 700px;
+  // }
 
-  @media screen and (min-width: $desktop-width) {
-    width: 270px;
-    height: 260px;
-    perspective: 600px;
-  }
+  // @media screen and (min-width: $desktop-width) {
+  //   width: 270px;
+  //   height: 260px;
+  //   perspective: 600px;
+  // }
 }
 
 .card__img {
   position: relative;
-
+  width: 100%;
   height: 100%;
+
   align-items: center;
   transform: rotateY(0);
   transition: transform 500ms $transition-type;
@@ -46,6 +51,11 @@
 .card__face {
   position: absolute;
   backface-visibility: hidden;
+  // overflow: hidden;
+
+  // display: flex;
+  // justify-content: center;
+
   width: 100%;
   height: 100%;
 }
