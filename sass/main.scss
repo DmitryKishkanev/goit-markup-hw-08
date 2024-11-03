@@ -9,27 +9,27 @@
 @import "./base/headlines";
 
 // reused
-@import "./components-new/reused/card";
-@import "./components-new/reused/networks";
-@import "./components-new/reused/logo";
+@import "./components/reused/card";
+@import "./components/reused/networks";
+@import "./components/reused/logo";
 
 // by-click
-@import "./components-new/by-click/menu-nav";
-@import "./components-new/by-click/backdrop";
+@import "./components/by-click/menu-nav";
+@import "./components/by-click/backdrop";
 
 // general
-@import "./components-new/general/header";
-@import "./components-new/general/footer";
+@import "./components/general/header";
+@import "./components/general/footer";
 
 // studio
-@import "./components-new/studio/hero";
-@import "./components-new/studio/advantages";
-@import "./components-new/studio/work";
-@import "./components-new/studio/comand";
-@import "./components-new/studio/clients";
+@import "./components/studio/hero";
+@import "./components/studio/advantages";
+@import "./components/studio/work";
+@import "./components/studio/comand";
+@import "./components/studio/clients";
 
 // portfolio
-@import "./components-new/portfolio/section-portfolio";
-@import "./components-new/portfolio/portfolio-nav";
-@import "./components-new/portfolio/portfolio-items";
-@import "./components-new/portfolio/portfolio-card";
+@import "./components/portfolio/section-portfolio";
+@import "./components/portfolio/portfolio-nav";
+@import "./components/portfolio/portfolio-items";
+@import "./components/portfolio/portfolio-card";
