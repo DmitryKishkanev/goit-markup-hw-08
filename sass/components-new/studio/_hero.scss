@@ -14,7 +14,7 @@
       $additional-background,
       $additional-background
     ),
-    url("../../../img/Hero/hero-MOB-x1.jpg");
+    url("../../../img/hero/hero-MOB-x1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -35,7 +35,7 @@
         $additional-background,
         $additional-background
       ),
-      url("../../../img/Hero/hero-MOB-x2.jpg");
+      url("../../../img/hero/hero-MOB-x2.jpg");
   }
 }
 
@@ -47,7 +47,7 @@
         $additional-background,
         $additional-background
       ),
-      url("../../../img/Hero/hero-TAB-x1.jpg");
+      url("../../../img/hero/hero-TAB-x1.jpg");
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -60,7 +60,7 @@
           $additional-background,
           $additional-background
         ),
-        url("../../../img/Hero/hero-TAB-x2.jpg");
+        url("../../../img/hero/hero-TAB-x2.jpg");
     }
   }
 }
@@ -73,7 +73,7 @@
         $additional-background,
         $additional-background
       ),
-      url("../../../img/Hero/hero-DESK-x1.jpg");
+      url("../../../img/hero/hero-DESK-x1.jpg");
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -86,7 +86,7 @@
           $additional-background,
           $additional-background
         ),
-        url("../../../img/Hero/hero-DESK-x2.jpg");
+        url("../../../img/hero/hero-DESK-x2.jpg");
     }
   }
 }
