@@ -73,7 +73,7 @@
         $additional-background,
         $additional-background
       ),
-      url("../img/Hero/Hero-MOBILE-x1.jpg");
+      url("../img/Hero/Hero-DESKTOP-x1.jpg");
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -86,7 +86,7 @@
           $additional-background,
           $additional-background
         ),
-        url("../img/Hero/Hero-MOBILE-x2.jpg");
+        url("../img/Hero/Hero-DESKTOP-x1.jpg");
     }
   }
 }
